@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EDDBDB"
+        android:text="0"
+        android:id="@+id/time"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="80dp"
+        android:layout_above="@id/buttons_layout"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/buttons_layout">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:cornerRadius="36dp"
+            android:textSize="16sp"
+            android:text="Start"
+            android:id="@+id/button_start"
+            android:layout_margin="12dp"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:cornerRadius="36dp"
+            android:textSize="16sp"
+            android:text="Reset"
+            android:backgroundTint="#C30C0C"
+            android:id="@+id/button_reset"
+            android:layout_margin="12dp"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:cornerRadius="36dp"
+            android:textSize="16sp"
+            android:text="Stop"
+            android:id="@+id/button_stop"
+            android:layout_margin="12dp"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton" />
+    </LinearLayout>
+
+</RelativeLayout>
